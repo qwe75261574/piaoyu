@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>驃宇重車</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <div class="logo">驃宇重車</div>
+        <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#garage">驃宇車庫</a></li>
+            <li><a href="#maintenance">車輛保養</a></li>
+            <li><a href="#beauty">車輛美容</a></li>
+            <li><a href="#agv">AGV 安全帽</a></li>
+            <li><a href="#" id="road-rescue">24小時道路救援</a></li>
+            <li><a href="#" id="contact-us">聯繫我們</a></li>
+        </ul>
+    </nav>
+
+    <!-- 首頁 -->
+    <section id="home" class="hero">
+        <h1>歡迎來到驃宇重車</h1>
+        <p>專業重機服務，讓您的愛車煥然一新！</p>
+        <a href="#garage" class="btn">探索更多</a>
+    </section>
+
+    <!-- 驃宇車庫 -->
+    <section id="garage" class="section">
+        <h2>驃宇車庫</h2>
+        <p>我們提供多款重機選擇與專業改裝服務。</p>
+        <div class="brand-menu">
+            <button class="brand-btn" data-brand="kawasaki">Kawasaki</button>
+            <button class="brand-btn" data-brand="ducati">Ducati</button>
+            <button class="brand-btn" data-brand="honda">Honda</button>
+            <button class="brand-btn" data-brand="suzuki">Suzuki</button>
+            <button class="brand-btn" data-brand="yamaha">Yamaha</button>
+        </div>
+        <div class="model-menu" id="model-menu">
+            <!-- 這裡會動態顯示車款選單 -->
+        </div>
+        <div class="gallery" id="bike-gallery">
+            <!-- 這裡會動態顯示車款圖片 -->
+        </div>
+        <div class="info-table" id="info-table">
+            <!-- 這裡會動態顯示車款資訊表格 -->
+        </div>
+    </section>
+
+    <!-- 車輛保養 -->
+    <section id="maintenance" class="section">
+        <h2>車輛保養</h2>
+        <p>專業技師團隊，提供全方位的保養服務。</p>
+        <div class="maintenance-menu">
+            <button class="maintenance-btn" data-maintenance="oil-change">機油更換(濾芯)</button>
+            <button class="maintenance-btn" data-maintenance="brake-fluid">煞車油更換</button>
+            <button class="maintenance-btn" data-maintenance="suspension">避震調整</button>
+            <button class="maintenance-btn" data-maintenance="chain">鍊條調整及更換</button>
+            <button class="maintenance-btn" data-maintenance="tire">輪胎更換</button>
+            <button class="maintenance-btn" data-maintenance="inspection">車輛檢驗</button>
+        </div>
+        <div class="maintenance-gallery" id="maintenance-gallery">
+            <!-- 這裡會動態顯示保養項目圖片 -->
+        </div>
+        <div class="maintenance-info" id="maintenance-info">
+            <!-- 這裡會動態顯示保養項目資訊 -->
+        </div>
+    </section>
+
+    <!-- 車輛美容 -->
+    <section id="beauty" class="section">
+        <h2>車輛美容</h2>
+        <p>讓您的愛車煥然一新，展現獨特風采。</p>
+        <div class="beauty-menu">
+            <button class="beauty-btn" data-beauty="chain-cleaning">鍊條清潔: 800$</button>
+            <button class="beauty-btn" data-beauty="body-beauty">車體美容: 1000$</button>
+            <button class="beauty-btn" data-beauty="deep-cleaning">深層清潔美容: 1500$</button>
+        </div>
+    </section>
+
+    <!-- AGV 安全帽 -->
+    <section id="agv" class="section">
+        <h2>AGV 安全帽</h2>
+        <p>未來持續更新。</p>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>&copy; 2025 驃宇重車. 版權所有.</p>
+    </footer>
+
+    <!-- 彈出視窗 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-text"></div>
+        </div>
+    </div>
+
+    <!-- 公告視窗 -->
+    <div id="announcement-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>公告</h2>
+            <p>2/8 更新: 機油廠商 & 車輛保養更新 & 車輛美容更新</p>
+            <p>2/7 更新: 驃宇車庫已完成所有車輛更新</p>
+            <p>2/6 更新: 網頁正式上線</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
